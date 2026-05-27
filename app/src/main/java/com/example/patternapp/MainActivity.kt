@@ -13,14 +13,15 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-
+        // Declaration of variables
         val txtPattern = findViewById<TextView>(R.id.textPat)
 
         var pattern = ""
+        //initiating a row variable that control the number of lines
         var row = 1
-
+        // while loop to performs iterations
         while (row <= 5) {
-
+            // 
             var col = 1
 
             while (col <= row) {
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             row++
         }
 
-        
+        txtPattern.text = pattern
 
 
 
