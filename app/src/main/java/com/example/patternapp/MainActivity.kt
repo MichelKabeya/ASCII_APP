@@ -19,6 +19,19 @@ class MainActivity : AppCompatActivity() {
         var pattern = ""
         var row = 1
 
+        while (row <= 5) {
+
+            var col = 1
+
+            while (col <= row) {
+                pattern += "* "
+                col++
+            }
+
+            pattern += "\n"
+            row++
+        }
+
         
 
 
