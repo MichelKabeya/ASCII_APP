@@ -20,10 +20,11 @@ class MainActivity : AppCompatActivity() {
         //initiating a row variable that control the number of lines
         var row = 1
         // while loop to performs iterations
+        //This loop controls the number of rows.
         while (row <= 5) {
-            // 
+            //
             var col = 1
-
+            //This loop prints stars inside each row.
             while (col <= row) {
                 pattern += "* "
                 col++
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             pattern += "\n"
             row++
         }
-
+        // displaying the pattern
         txtPattern.text = pattern
 
 
